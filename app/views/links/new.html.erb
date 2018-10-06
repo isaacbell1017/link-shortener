@@ -1,0 +1,16 @@
+<div class="container">
+  <p class="h1">Link Slimmer</p>
+
+  <form method="post" action="<%= links_path %>" class="needs-validation" novalidate>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="form-group">
+      <label for="link">Link</label>
+      <input type="link" class="form-control" id="link" name='link[full_url]'
+             placeholder="https://www.example.com/really/long/path?with=query_params" required>
+    </div>
+
+    <div class="form-group mt-3">
+      <button class="btn btn-primary" type="submit">Slim My Link!</button>
+    </div>
+  </form>
+</div>

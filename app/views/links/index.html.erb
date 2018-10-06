@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Path</th>
+        <th scope="col">Clicked Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @links.order('id asc').each do |link| -%>
+        <tr>
+          <th scope="row"><%= link.id %></th>
+          <td>
+            <a href="<%= link.full_url %>" class='click_counter' data-id=<%= link.id %>>
+              <%= root_url %><%= link.path %>
+            </a>
+          </td>
+          <td>
+            <%= link.stat_clicked_count %>
+          </td>
+        </tr>
+      <% end -%>
+    </tbody>
+  </table>
+</div>

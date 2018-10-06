@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @link.full_url %></h1>
+  <div class="row">
+    <a href="<%= @link.full_url %>" class='click_counter' data-id="<%= @link.id %>">
+      <%= root_url %><%= @link.path %>
+    </a>
+  </div>
+</div>

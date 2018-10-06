@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: link_shortener_development
+  pool: 5
+  username: pguser
+  password: root
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: link_shortener_test
+  pool: 5
+  username: pguser
+  password: root
+  host: localhost
+  port: 5432

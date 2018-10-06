@@ -1,4 +1,4 @@
-# Link Shortener Take Home
+# Link Shortener
 
 So let's make a link shortener. Let's make it with rails. Let's submit
 it in a git repo. Let's give it test coverage. Let's use Postgres.
@@ -14,16 +14,4 @@ it in a git repo. Let's give it test coverage. Let's use Postgres.
    expire the shortened link and see how many times your link has been used.
    When a link has been expired, render an empty 404.
 
-## Other thoughts
 
-1. Your solution should be scalable but not insanely so. If we handed this
-   to our marketing people and they made 1k urls a day each getting hit 20k
-   times a day, would it fall over?
-2. It doesn't have to be pretty. Render HTML on the backend or the
-   frontend, whatever is easier for you.
-3. If you have a question, ask! (But yes there's some deliberate vagueness here.)
-4. Don't just use a link shortener gem.
-5. What is a link shortener? You should be able to shorten a long URL like
-   `https://www.example.com/really/long/path?with=query_params` to something
-   much shorter. Shortened URL would be something like `http://localhost/s/xYz123`.
-6. There should be a different url for the link admin page.

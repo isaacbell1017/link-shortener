@@ -8,6 +8,7 @@
       </tr>
     </thead>
     <tbody>
+      <% if @links.present? && @links.any? %>
       <% @links.order('id asc').each do |link| -%>
         <tr>
           <th scope="row"><%= link.id %></th>
@@ -20,6 +21,7 @@
             <%= link.stat_clicked_count %>
           </td>
         </tr>
+      <% end -%>
       <% end -%>
     </tbody>
   </table>

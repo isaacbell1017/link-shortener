@@ -1,7 +1,16 @@
-# Link Shortener
+= Link Shortener
 
 Demo app - let's make a link shortener. Let's make it with rails. Let's submit
 it in a git repo. Let's give it test coverage. Let's use Postgres.
 
 
+To log into the admin console:
+
+> https://secret-stream-93364.herokuapp.com/admin
+
++email+
+admin
+
++password+
+pass1234
 

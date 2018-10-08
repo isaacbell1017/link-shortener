@@ -19,7 +19,7 @@ RSpec.describe Link, type: :model do
   describe "path" do
     it "should contain correct slug" do
       link = FactoryBot.create(:link)
-      expect(link.path).to eq "/s/#{link.slug}"
+      expect(link.path).to eq "s/#{link.slug}"
     end
   end
 end
